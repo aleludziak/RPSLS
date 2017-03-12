@@ -1,23 +1,19 @@
-# Rock-paper-scissors-lizard-Spock template
-
-# The key idea of this program is to equate the strings
-# "rock", "paper", "scissors", "lizard", "Spock" to numbers
-# as follows:
-#
+import random
+'''
+The key idea of this program is to equate the strings
+"rock", "paper", "scissors", "lizard", "Spock" to numbers as follows:
+'''
 # 0 - rock
 # 1 - Spock
 # 2 - paper
 # 3 - lizard
 # 4 - scissors
 
-# helper functions
-import random
-
 CHARACTERS = {'1': 'ROCK', '2': 'PAPER', '3': 'SCISSORS', '4': 'LIZARD', '5': 'SPOCK'}
 
 
 def name_to_number(name):
-    # delete the following pass statement and fill in your code below
+
     if name == 'ROCK':
         name = 0
     elif name == 'SPOCK':
@@ -33,9 +29,6 @@ def name_to_number(name):
               "")
         rpsls()
     return name
-
-# convert name to number using if/elif/else
-# don't forget to return the result!
 
 
 def number_to_name(number):
